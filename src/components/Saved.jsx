@@ -10,22 +10,23 @@ class Saved extends Component {
     this.state = {
       articles: []
     };
-
+    
   };
   componentDidMount() {
     getSaved().then((response) => {
-      this.setState({
-        articles: response.data
-      });
-    }
-  );
+        this.setState({
+          articles: response.data
+        });
+      }
+    );
   }
+
 
    render() {
 
 
      return(
-      <SavedArt articles={this.state.articles} />
+      <SavedArt articles={this.state.articles}/>
      )
    }
 }
