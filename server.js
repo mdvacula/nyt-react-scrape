@@ -19,7 +19,14 @@ app.use(bodyParser.json({type: "application/vnd.api+json"}))
 
 app.use(express.static("build"));
 
-mongoose.connect("mongodb://localhost/nytreact")
+var dbUri = "mongodb://localhost/nytreact";
+if (process.env.MONGODB_URI) {
+  mongoose.connect(process.env.MONGODB_URI);
+}
+else {
+  mongoose.connect(dbUri);
+}
+
 var db = mongoose.connection;
 
 db.on("error", function(err) {
