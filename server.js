@@ -38,7 +38,7 @@ db.once("open", function() {
 });
 
 app.get("/", function(req,res) {
-  res.sendFile(__dirname + "/public/index.html");
+  res.sendFile(__dirname + "/build/static/index.html");
 });
 
 //app.get("/api/saved")
