@@ -13,14 +13,18 @@
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.1.2",
     "react-scripts": "1.0.10",
-    "semantic-ui-react": "^0.71.2"
+    "semantic-ui-react": "^0.71.2",
+    "snyk": "^1.258.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "dev": "concurrently \"npm start\" \"node server\""
+    "dev": "concurrently \"npm start\" \"node server\"",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
-  "proxy": "http://localhost:3001"
+  "proxy": "http://localhost:3001",
+  "snyk": true
 }
