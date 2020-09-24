@@ -9,11 +9,11 @@
     "express": "^4.15.3",
     "mongoose": "^4.11.4",
     "morgan": "^1.8.2",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
     "react-router-dom": "^4.1.2",
     "react-scripts": "1.0.10",
-    "semantic-ui-react": "^0.71.2"
+    "semantic-ui-react": "^0.71.5"
   },
   "scripts": {
     "start": "react-scripts start",
